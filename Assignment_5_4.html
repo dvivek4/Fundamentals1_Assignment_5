@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+          var username = "John";
+          var skills = "Java";
+          var salary = 1000;
+
+          function printDetails() {
+              document.write("<b>Employee Details </b><br>")
+              document.write("Username:" + username + "<br>");
+
+              document.write("Skills: " + skills + "<br>");
+
+              document.write("Salary: " + salary + "<br>");
+          }
+
+          printDetails();
+
+          var chgsalary;
+
+          function changeSalary(chgsalary) {
+              chgsalary = document.getElementById('chgsalary1');
+              //	changeSalary.innerHTML="updated salary";
+              console.log("changesalary:" + chgsalary.value);
+              salary = chgsalary.value;
+              console.log("Updated Salary: " + salary);
+              printDetails();
+          }
+        </script>
+        <br/>
+         Enter Salary: 
+        <input type="text" name="salary" value="" id="chgsalary1"/>
+         
+        <button onclick="changeSalary();">change salary</button>
+    </body>
+</html>

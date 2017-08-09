@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=windows-1252"/>
+        <title>Assignment_5_2</title>
+    </head>
+    <body>
+    <script type="text/javascript">
+    function isVowel(x){
+
+    var result;
+
+        if(x == "A" || x == "E" || x == "I" || x == "O" || x == "U" ) {
+        var result = "Entered character is a Vowel"
+            return result;
+        }
+        else{
+        var consonant = "Entered character is a Consonant"
+            return consonant;
+        }
+    return result;
+    }
+
+    var input;
+
+
+    input = prompt("Enter a character ");
+    input = input.toUpperCase();
+    if(input.length == 1){
+        isVowel(input);
+        }
+    
+    else{
+        while(input.length != 1){
+            prompt("Please Enter a character ");
+            if(input.length == 1){
+                isVowel(input);
+            }
+        }
+    }
+
+    alert(isVowel(input));
+    </script>
+    </body>
+</html>

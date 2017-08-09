@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p>Creating a JavaScript Object.</p>
+        <p id="js"></p>
+        <script>
+		var studentDetails = "";
+		var addressDetails = "";
+          var student = {
+              studentName : "John",
+			  dob : "5th june 1985",
+			  skills : "football",
+					address :  {
+							state : "Mumbai",
+							city : "main city",
+							country : "India",
+							pincode : 501511, 
+              }
+          };
+		  var x;
+		  var y;
+		  student.eyeColor = "blue";
+		  student.mothername = "Cera";
+          delete student.skills;
+       
+ 
+ 
+		  document.getElementById("js").innerHTML += student.studentName + "<br>";
+		  document.getElementById("js").innerHTML += student.dob + "<br>";
+		//	document.getElementById("js").innerHTML = student.skills + "<br>";
+			document.getElementById("js").innerHTML += student.eyeColor + "<br>";
+			document.getElementById("js").innerHTML += student.mothername + "<br>";
+			document.getElementById("js").innerHTML += student.address.state + "<br>";
+			document.getElementById("js").innerHTML += student.address.city + "<br>";
+			document.getElementById("js").innerHTML += student.address.country + "<br>";
+			document.getElementById("js").innerHTML += student.address.pincode;
+        </script>
+    </body>
+</html>
